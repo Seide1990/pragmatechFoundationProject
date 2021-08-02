@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<link rel="stylesheet",type="text/css" href="java.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+ 
+    <script>
+let info='Bu sahəyə yeni başlayanlar üçün programlaşdırma həddindən artıq qarışıq və çətin gələ bilər.İnternetdə tonlarla qaynaqları görüb gözünüz qorxa bilər.Düşünə bilərsiniz ki, bu qədər konsepti necə öyrənə bilərəm və yaxud bu mənim nə qədər zamanımı alar. Əfsanələrə görə, əgər riyaziyyatı yaxşı bilmirsinizsə sizin bu sahədə uğurlu ola bilməyiniz mümkün deyil.Və yaxud bu sahədə ali təhsiliniz yoxdursa heç bir yerdə iş tapa bilməyəcəksiniz.Əslində isə bu sahəyə giriş etdikdən sonra heç də elə olmadığını görəcəksiniz.'
+/*  metindeki herfleri reqemleri simvollarin bosluqlarin sayini tapan proqram  */
+/*     console.log('metnin sayi  '+info.length)
+var herf=0; simvol=0;bosluq=0;reqem=0;
+for (i in info){
+      if(info[i].codePointAt(0)==32){ bosluq+=1 }
+      else if (info[i].codePointAt(0)>=32 & info[i].codePointAt(0)<=47) { simvol+=1 }
+      else if (info[i].codePointAt(0)>=48 & info[i].codePointAt(0)<=57) {reqem+=1}
+     else if (info[i].codePointAt(0)>=58 & info[i].codePointAt(0)<=64){ simvol+=1}
+     else if (info[i].codePointAt(0)>=91 & info[i].codePointAt(0)<=96){simvol+=1}
+     else if (info[i].codePointAt(0)>=123 & info[i].codePointAt(0)<=127){simvol+=1}
+     else {herf+=1}
+     
+}
+
+console.log('herflerin sayi  '+herf)
+console.log('simvollarin sayi  '+simvol)
+console.log('bosluqlarin sayi  '+bosluq)
+console.log('reqemlerin sayi  '+reqem)  */
+
+/*         metnin sozlere ayiran proqram
+words=[]
+sozler=[]
+count=0
+i=0
+  words=(info.split('.'));
+  console.log(words.length)
+  console.log(words)
+  for ( i in words){
+sozler.push(words[i].split(' '))
+
+count+=sozler[i].length
+
+  }
+  console.log(count)
+
+  for (i in sozler){
+      console.log(sozler[i]) 
+          
+      
+  }*/
+  /*     metndeki s herflerinin sayi*/
+  /*
+  count=0
+  for( i in info){
+if (info[i]=='s') {count+=1}
+  }
+  
+    console.log(count)    */
+
+
+  /*  maximum ve minimumu tapan proqram*/
+  
+  /* let arr=[1,3,4,6,89,12,67,34,89,123]
+var min=1;max=0
+  count=arr.length
+  min =arr[0]
+for (i=0;i<=count;i++){
+  if (arr[i]>max){
+    max=arr[i] } 
+    else if( arr[i]<min){
+        min =arr[i]
+      }
+    }
+
+console.log(max)
+console.log(min) */
+
+/*arreyin cemini tapan proqram  */
+/*     
+count=arr.length
+console.log(count)
+console.log(typeof(arr[1]))
+var summ=0
+for (i=0; i<count-1;i++){
+  summ+=arr[i]
+}
+console.log(summ)  */
+
+/*   massivin elementlerinin kvadratlarindan duzelen yeni massiv*/
+/*   let arr=[1,3,4,6,89,12,67,34,89,123]
+kvadrat=[]
+for(i=0; i<arr.length;i++)
+{
+  kvadrat[i]=arr[i]*arr[i]
+ 
+}
+console.log(kvadrat)   */
+let arr=[1,3,4,6,89,12,67,34,89,123]
+tek_eded=[]
+cut_eded=[]
+a=0;
+b=0;
+sayi=arr.length
+for ( i=0; i<sayi; i++) {
+  if (arr[i] % 2==0) { 
+    cut_eded[a]=arr[i]
+    a++
+  }
+  else { 
+    tek_eded[b]=arr[i]
+  b++ }
+  
+}
+console.log(cut_eded )
+console.log(tek_eded)
+</script>
+
+        
+</body>
+</head>
+</html>
